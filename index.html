@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="js/all.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -139,13 +140,13 @@
                 </div><!--main-col-->
 
                 <div class="main__col">
-                    <img src="img/perfect.jpg" data-image="img/perfect.jpg" data-artist="Ed Sheeran" data-song="Perfect" data-song="assets/Perfect.mp3">
+                    <img src="img/perfect.jpg" data-image="img/perfect.jpg" data-artist="Ed Sheeran" data-song="Perfect" data-file="assets/Perfect.mp3">
                     <h3>Perfect</h3>
                     <p>(aqui vai a descrição da minha música)</p>
                 </div><!--main-col-->
 
                 <div class="main__col">
-                    <img src="img/aquarela.jpg" data-image="img/aquarela.jpg" data-artist="Toquinho" data-song="Aquarela" data-song="assets/Aquarela.mp3">
+                    <img src="img/aquarela.jpg" data-image="img/aquarela.jpg" data-artist="Toquinho" data-song="Aquarela" data-file="assets/Aquarela.mp3">
                     <h3>Aquarela</h3>
                     <p>(aqui vai a descrição da minha música)</p>
                 </div><!--main-col-->
@@ -176,5 +177,10 @@
         </div> <!--player-->
 
     </div>
+
+    <audio id="audioPlayer" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;" controls="">
+        
+    </audio>
+
 </body>
 </html>

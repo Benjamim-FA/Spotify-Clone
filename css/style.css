@@ -172,7 +172,8 @@ html,body{height: 100%;}
 }
 
 .player__artist{
-    width: 20%;
+    width: 414px;
+    
 }
 
 .player__artist img{
@@ -225,4 +226,25 @@ html,body{height: 100%;}
     height: 7px;
     border-radius: 8px;
     background-color: white;
+}
+
+@media screen and (max-width: 1700px){
+    .main__col{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+    }
+    
+    .main__col{
+        width: 48%;
+        margin-right: 2%;
+    }
 }
